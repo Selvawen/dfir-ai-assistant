@@ -404,6 +404,7 @@ dfir-ai-assistant
 # Why this Project Matters
 
 This project demonstrates practical skills used by:
+
 -SOC Analysts
 -Detection Engineers
 -Threat Hunters
@@ -411,15 +412,15 @@ This project demonstrates practical skills used by:
 -Security Automation Engineers
 
 Including:
+
 -security log analysis
 -threat detection engineering
 -MITRE ATT&CK mapping
 -automated incident triage
 -SOC tooling development
 
-# Future Improvements
+# Future Improvements 
 
-Planned enhancements include
 -Elastic / SIEM integration
 -automated threat intelligence enrichment
 -ML-based anomaly detection
