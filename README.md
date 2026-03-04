@@ -419,6 +419,8 @@ Including:
 -automated incident triage
 -SOC tooling development
 
+---
+
 # Future Improvements 
 
 -Elastic / SIEM integration
