@@ -112,7 +112,8 @@ A lightweight SOC-style dashboard allows analysts to:
 
 Shows detected cases, risk scores, and summary of findings.
 
-<img width="1212" alt="dashboard" src="https://github.com/user-attachments/assets/bc30dc7b-b874-45ab-9da3-7492133bd8e4" />
+<img width="1212" alt="dashboard" src="https://github.com/user-attachments/assets/2bf43972-8da6-47a9-898c-8f7824fca153" />
+
 
 
 ---
@@ -121,7 +122,8 @@ Shows detected cases, risk scores, and summary of findings.
 
 Displays the generated case report including MITRE mapping, detections, and investigation summary.
 
-<img width="1212" alt="case-report" src="https://github.com/user-attachments/assets/b429ffd8-adc4-40f4-a0c8-67af87d249ce" />
+<img width="1212" alt="case-report" src="https://github.com/user-attachments/assets/23bbd450-2e7b-441a-9806-c05b52426562" />
+
 
 
 
@@ -131,7 +133,7 @@ Displays the generated case report including MITRE mapping, detections, and inve
 
 Visual timeline reconstruction of attacker activity.
 
-<img width="1002" height="603" alt="timeline" src="https://github.com/user-attachments/assets/874b7c86-2c04-4561-91ec-50a3abd36137" />
+<img width="1002" height="603" alt="timeline" src="https://github.com/user-attachments/assets/b9b44d04-f5ac-4a55-88b8-4e71c966341d" />
 
 
 ---
@@ -140,7 +142,7 @@ Visual timeline reconstruction of attacker activity.
 
 Example detection for suspicious PowerShell execution.
 
-<img width="962" height="427" alt="detections" src="https://github.com/user-attachments/assets/35996eda-7d5b-40c9-a977-7155e280cc74" />
+<img width="962" height="427" alt="detections" src="https://github.com/user-attachments/assets/77b8890a-eb68-4eeb-b742-f29b73c9c79f" />
 
 ---
 
@@ -149,7 +151,7 @@ Example detection for suspicious PowerShell execution.
 The platform exposes a REST API that allows analysts or security automation pipelines to ingest logs and trigger investigations programmatically.  
 The Swagger UI provides interactive documentation and testing for endpoints such as log ingestion and case analysis.
 
-<img width="1212" alt="api" src="https://github.com/user-attachments/assets/ef82abd4-0cb4-42f7-8471-a9af1808c1a5" />
+<img width="1212" alt="api" src="https://github.com/user-attachments/assets/b8b909c3-912d-4737-948b-7ea2ba5e82e9" />
 
 
 ---
@@ -447,5 +449,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 
 
