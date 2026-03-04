@@ -402,6 +402,7 @@ dfir-ai-assistant
 └── README.md
 ```
 # Why this Project Matters
+
 This project demonstrates practical skills used by:
 -SOC Analysts
 -Detection Engineers
@@ -417,8 +418,8 @@ Including:
 -SOC tooling development
 
 # Future Improvements
-Planned enhancements include
 
+Planned enhancements include
 -Elastic / SIEM integration
 -automated threat intelligence enrichment
 -ML-based anomaly detection
