@@ -1,0 +1,21 @@
+id: R-PS-ENC-001
+title: Encoded PowerShell Execution
+description: Detects PowerShell usage with -enc/-EncodedCommand or common obfuscation indicators.
+severity: high
+mitre:
+  - technique: T1059.001
+    name: "Command and Scripting Interpreter: PowerShell"
+match:
+  all:
+    - field: process_name
+      op: equals
+      value: powershell.exe
+    - field: command_line
+      op: contains_any
+      value:
+        - " -enc "
+        - " -encodedcommand "
+        - "frombase64string"
+        - "iex "
+        - "downloadstring"
+

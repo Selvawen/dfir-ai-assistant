@@ -1,0 +1,12 @@
+{"Timestamp":"2026-03-03T10:00:01Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:05Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:10Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:15Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:20Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:25Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:30Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:35Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:40Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:00:45Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:01:10Z","DeviceName":"workstation-1","Channel":"Security","EventID":4672,"SubjectUserName":"employee","IpAddress":"10.0.0.55"}
+{"Timestamp":"2026-03-03T10:03:00Z","DeviceName":"workstation-1","Channel":"System","EventID":7045,"SubjectUserName":"employee"}

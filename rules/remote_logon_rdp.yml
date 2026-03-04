@@ -1,0 +1,16 @@
+id: R-AUTH-RDP-001
+title: RDP RemoteInteractive Logon
+description: Detects 4624 logons with LogonType 10 (RDP).
+severity: medium
+mitre:
+  - technique: T1021.001
+    name: "Remote Services: Remote Desktop Protocol"
+match:
+  all:
+    - field: event_id
+      op: equals
+      value: "4624"
+    - field: logon_type
+      op: equals
+      value: "10"
+

