@@ -417,7 +417,8 @@ Including:
 -SOC tooling development
 
 # Future Improvements
-Planned enhancements include:
+Planned enhancements include
+
 -Elastic / SIEM integration
 -automated threat intelligence enrichment
 -ML-based anomaly detection
