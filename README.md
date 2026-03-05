@@ -405,30 +405,31 @@ dfir-ai-assistant
 
 This project demonstrates practical skills used by:
 
--SOC Analysts
--Detection Engineers
--Threat Hunters
--DFIR Investigators
--Security Automation Engineers
+- **SOC Analysts**
+- **Detection Engineers**
+- **Threat Hunters**
+- **DFIR Investigators**
+- **Security Automation Engineers**
 
 Including:
 
--security log analysis
--threat detection engineering
--MITRE ATT&CK mapping
--automated incident triage
--SOC tooling development
+- **security log analysis**
+- **threat detection engineering**
+- **MITRE ATT&CK mapping**
+- **automated incident triage**
+- **SOC tooling development**
 
 ---
 
 # Future Improvements 
 
--Elastic / SIEM integration
--automated threat intelligence enrichment
--ML-based anomaly detection
--graph-based attack path visualization
--containerized deployment (Docker)
--cloud deployment (AWS)
+- **Elastic / SIEM integration**
+- **automated threat intelligence enrichment**
+- **ML-based anomaly detection**
+- **graph-based attack path visualization**
+- **containerized deployment (Docker)**
+- **cloud deployment (AWS)**
+
 
 
 
